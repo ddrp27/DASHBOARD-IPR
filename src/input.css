@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Dark Mode Variables (Default) */
+  --luxury-bg: #080808;
+  --luxury-card: #121212;
+  --luxury-card-hover: #161616;
+  --luxury-gold: #C5A880;
+  --luxury-gold-light: #E5D6C3;
+  --luxury-gold-dark: #8F7149;
+  --luxury-gold-muted: #5C4E3A;
+  --luxury-border: #1F1E1D;
+  --luxury-border-active: #3E3B37;
+  --luxury-text: #F5F5F0;
+  --luxury-muted: #9E9A95;
+
+  --luxury-success-bg: #13281E;
+  --luxury-success-text: #6AD39F;
+  --luxury-warning-bg: #2C200C;
+  --luxury-warning-text: #F5B041;
+  --luxury-danger-bg: #2C1212;
+  --luxury-danger-text: #F07D7D;
+}
+
+html.light-mode {
+  /* Light Mode Variables */
+  --luxury-bg: #F5F4F0;
+  --luxury-card: #FFFFFF;
+  --luxury-card-hover: #FAF9F6;
+  --luxury-gold: #735630;
+  --luxury-gold-light: #2E271D;
+  --luxury-gold-dark: #8F7149;
+  --luxury-gold-muted: #DEDAD0;
+  --luxury-border: #DEDAD0;
+  --luxury-border-active: #A39E94;
+  --luxury-text: #1A1917;
+  --luxury-muted: #5F5B54;
+
+  --luxury-success-bg: #EAF7F0;
+  --luxury-success-text: #1C6E42;
+  --luxury-warning-bg: #FDF4E5;
+  --luxury-warning-text: #965B00;
+  --luxury-danger-bg: #FDF0F0;
+  --luxury-danger-text: #A62E2E;
+}
+
+[x-cloak] {
+  display: none !important;
+}
+
+/* Custom Scrollbar for Luxury Aesthetic */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--luxury-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--luxury-border-active);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--luxury-gold);
+}
+
+/* Subtle blur and luxury gradient borders */
+.border-luxury-gradient {
+  border: 1px solid transparent;
+  background: linear-gradient(var(--luxury-card), var(--luxury-card)) padding-box,
+    linear-gradient(to bottom right, var(--luxury-border-active), var(--luxury-border), var(--luxury-gold)) border-box;
+}
+
+.border-gold-glow {
+  box-shadow: 0 0 20px -5px rgba(197, 168, 128, 0.2);
+}

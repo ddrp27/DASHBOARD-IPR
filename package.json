@@ -1,0 +1,13 @@
+{
+  "name": "dashboard-ipr",
+  "version": "1.0.0",
+  "description": "Dashboard Directivo Inversiones IPR",
+  "main": "index.html",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
+    "watch": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
