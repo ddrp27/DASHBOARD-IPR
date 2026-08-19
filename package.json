@@ -4,10 +4,11 @@
   "description": "Dashboard Directivo Inversiones IPR",
   "main": "index.html",
   "scripts": {
-    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
+    "build": "echo 'No build step required on Vercel'",
+    "compile": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
     "watch": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
   },
-  "devDependencies": {
+  "dependencies": {
     "tailwindcss": "^3.4.1"
   }
 }
